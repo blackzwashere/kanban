@@ -1,0 +1,13 @@
+# Site settings
+title: Kanban Tool
+description: > # this means to ignore newlines until "baseurl:"
+  Kanban via Jekyll
+baseurl: "/Kanban-Tool" # the subpath of your site, e.g. /Kanban-Tool/
+url: "http://kanban-tool.effectiveprogramming.com/" # the base hostname & protocol for your site
+twitter_username: effprog
+github_username:  EffectiveProgramming
+
+# Build settings
+markdown: kramdown
+
+exclude: [go.sh]

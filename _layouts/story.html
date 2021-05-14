@@ -1,0 +1,43 @@
+---
+layout: post
+---
+
+<article class="story">
+
+	<h2>Assigned</h2>
+
+	<ul>
+		{% for assignee in page.assigned %}
+		<li>{{ assignee }}</li>
+		{% endfor %}
+	</ul>
+
+	<h2>Description</h2>
+
+	{{ content }}
+
+	<h2>Scenario</h2>
+
+	<ul>
+		{% for scenario in page.scenarios %}
+		<li>{{ scenario }}</li>
+		{% endfor %}
+	</ul>
+
+	<h2>Acceptance Criteria</h2>
+
+	<ul>
+		{% for ac in page.acs %}
+		<li>{{ ac }}</li>
+		{% endfor %}
+	</ul>
+
+	<h2>Use Case(s)</h2>
+
+	<ul>
+		{% for uc in page.usecases %}
+		<li><a href="{{ site.baseurl }}{{ post_url uc[1] }}">{{ uc[0] }}</li>
+			{% endfor %}
+		</ul>
+
+	</article>

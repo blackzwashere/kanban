@@ -1,0 +1,39 @@
+---
+layout: page
+title: Milestones
+sortOrder: 4
+---
+
+<p class="note">Note that this page is simply a placeholder until we get some signficant stories and planning in here to make proper use of it.</p>
+
+<div class="home">
+	<table class="milestones">
+		<tr>
+			<th class="left right">Milestone 01</th>
+		</tr>
+		<tr>
+			<td class="left">
+				<ul class="post-list">
+					{% for post in site.categories.milestone-01 %}
+				    {% include story.html %}
+					{% endfor %}
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<th class="blank">&nbsp;</th>
+		</tr>
+		<tr>
+			<th class="left right">Milestone 02</th>
+		</tr>
+		<tr>
+			<td class="left">
+				<ul class="post-list">
+					{% for post in site.categories.milestone-02 %}
+				    {% include story.html %}
+					{% endfor %}
+				</ul>
+			</td>
+		</tr>
+	</table>
+</div>

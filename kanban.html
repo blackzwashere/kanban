@@ -1,0 +1,54 @@
+---
+layout: page
+title: Kanban Board
+sortOrder: 2
+---
+
+<div class="home">
+	<table class="kanban">
+		<tr>
+			<th class="left">Backlog</th>
+			<th class="mid">Ready</th>
+			<th class="mid">Doing</th>
+			<th class="mid">Done</th>
+			<th class="right">Demo</th>
+		</tr>
+		<tr>
+			<td class="left">
+				<ul class="post-list backlog">
+					{% for post in site.categories.backlog %}
+				    {% include story.html %}
+					{% endfor %}
+				</ul>
+			</td>
+			<td class="mid">
+				<ul class="post-list ready">
+					{% for post in site.categories.ready %}
+				    {% include story.html %}
+					{% endfor %}
+				</ul>
+			</td>
+			<td class="mid">
+				<ul class="post-list doing">
+					{% for post in site.categories.doing %}
+				    {% include story.html %}
+					{% endfor %}
+				</ul>
+			</td>
+			<td class="mid">
+				<ul class="post-list done">
+					{% for post in site.categories.done %}
+				    {% include story.html %}
+					{% endfor %}
+				</ul>
+			</td>
+			<td class="right">
+				<ul class="post-list demo">
+					{% for post in site.categories.demo %}
+				    {% include story.html %}
+					{% endfor %}
+				</ul>
+			</td>
+		</tr>
+	</table>
+</div>
